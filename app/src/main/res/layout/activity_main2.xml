@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="4dp"
+        android:background="@color/my_blue"
+        android:onClick="goBack"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/credit_spinner"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="144dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Spinner
+        android:id="@+id/credit_spinner2"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject2"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner" />
+
+    <Spinner
+        android:id="@+id/credit_spinner3"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject3"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner2" />
+
+    <Spinner
+        android:id="@+id/credit_spinner4"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject4"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner3" />
+
+    <Spinner
+        android:id="@+id/credit_spinner5"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="28dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject5"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner4" />
+
+    <Spinner
+        android:id="@+id/credit_spinner6"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject6"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner5" />
+
+    <Spinner
+        android:id="@+id/credit_spinner7"
+        android:layout_width="89dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/credit_options"
+        app:layout_constraintStart_toEndOf="@+id/editSubject7"
+        app:layout_constraintTop_toBottomOf="@+id/credit_spinner6" />
+
+
+    <Spinner
+        android:id="@+id/grade_spinner"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner"
+        app:layout_constraintTop_toBottomOf="@+id/editGrades" />
+
+    <Spinner
+        android:id="@+id/grade_spinner2"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner2"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner" />
+
+    <Spinner
+        android:id="@+id/grade_spinner3"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner3"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner2" />
+
+    <Spinner
+        android:id="@+id/grade_spinner4"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner4"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner3" />
+
+    <Spinner
+        android:id="@+id/grade_spinner5"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner5"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner4" />
+
+    <Spinner
+        android:id="@+id/grade_spinner6"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner6"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner5" />
+
+    <Spinner
+        android:id="@+id/grade_spinner7"
+        android:layout_width="89dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="36dp"
+        android:entries="@array/grades_options"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toEndOf="@+id/credit_spinner7"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner6" />
+
+    <EditText
+        android:id="@+id/editSubject"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editSubject2"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject" />
+
+    <EditText
+        android:id="@+id/editSubject3"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject2" />
+
+    <EditText
+        android:id="@+id/editSubject4"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject3" />
+
+    <EditText
+        android:id="@+id/editSubject5"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject4" />
+
+    <EditText
+        android:id="@+id/editSubject6"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject5" />
+
+    <EditText
+        android:id="@+id/editSubject7"
+        android:layout_width="112dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Subject 7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editSubject6" />
+
+
+    <EditText
+        android:id="@+id/editCredit"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Credit hours"
+        app:layout_constraintBottom_toTopOf="@+id/editSubject"
+        app:layout_constraintEnd_toStartOf="@+id/editGrades"
+        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintStart_toEndOf="@+id/editSubject"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.633" />
+
+    <EditText
+        android:id="@+id/editGrades"
+        android:layout_width="96dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Grade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="gpa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grade_spinner7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
